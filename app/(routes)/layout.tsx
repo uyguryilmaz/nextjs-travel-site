@@ -1,19 +1,20 @@
-import Footer from '@/components/sections/footer/Footer'
-import Header from '@/components/sections/header/Header'
-import React from 'react'
+import Footer from "@/components/sections/footer/Footer";
+import Header from "@/components/sections/header/Header";
+import React from "react";
 
-interface RouteLayoutProps{
-    children:React.ReactNode;
+interface RouteLayoutProps {
+  children: React.ReactNode;
 }
 
-const RouteLayout = ({children}:RouteLayoutProps) => {
+const RouteLayout = ({ children }: RouteLayoutProps) => {
   return (
     <div>
-        <Header/>
-        {children}
-        <Footer/>
-    </div>
-  )
-}
+      <Header />
+      <div className="min-h-screen flex-1">{children}</div>
 
-export default RouteLayout
+      <Footer />
+    </div>
+  );
+};
+
+export default RouteLayout;
