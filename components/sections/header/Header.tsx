@@ -4,6 +4,9 @@ import React from "react";
 import { Menu, MessageCircle, Phone, Search, User } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import MobileMenu from "./MobileMenu";
+import { navigationLinks } from "@/constans";
+import SearchPage from "./Search";
 
 const Header = () => {
   const socialLinks = [
@@ -12,14 +15,7 @@ const Header = () => {
     { href: "#", icon: <FaTwitter size={16} /> },
   ];
 
-  const navigationLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/hotels", label: "Hotel" },
-    { href: "/trips", label: "Trip" },
-    { href: "/rent-a-cars", label: "Rent a car" },
-    { href: "/contact ", label: "Contact" },
-  ];
+  
   return (
     <header className="bg-black text-white">
       {/**Top Bar */}
@@ -78,17 +74,12 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4 ml-30">
-            <div className="p-3 hidden lg:flex bg-orange-500 cursor-pointer text-white rounded-full ">
-              <Search />
-            </div>
-
-            <div className="p-3 hidden lg:flex bg-orange-500 cursor-pointer text-white rounded-full ">
-              <Menu />
-            </div>
-
-            <div className="p-3 hidden lg:flex bg-orange-500 cursor-pointer text-white rounded-full  ">
+            <SearchPage/>
+            <div className="p-3  bg-sky-400 cursor-pointer text-white rounded-full  ">
               <User />
             </div>
+
+            <MobileMenu/>
           </div>
         </div>
       </div>

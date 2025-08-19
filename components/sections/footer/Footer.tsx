@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { navigationLinks } from "@/constans";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -12,14 +13,7 @@ const Footer = () => {
     { href: "#", icon: <FaTwitter size={16} /> },
   ];
 
-  const navigationLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/hotels", label: "Hotel" },
-    { href: "/trips", label: "Trip" },
-    { href: "/rent-a-cars", label: "Rent a car" },
-    { href: "/contact ", label: "Contact" },
-  ];
+  
 
   const instagramImages = Array.from(
     { length: 11 },
@@ -28,7 +22,7 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-black text-white">
-      <div className="absolute -top-52 left-1/2 transform -translate-x-1/2 bg-orange-500 text-left px-6- py-12 rounded-md shadow-lg w-11/12 max-w-6xl h-72 grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+      <div className="absolute -top-52 left-1/2 transform -translate-x-1/2 bg-orange-500 text-left px-6- py-12 rounded-md shadow-lg w-11/12 max-w-6xl h-50 grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <div>
           <h2 className="text-3xl font-bold ">Ready to get started?</h2>
           <p className="mt-2 text-lg">
@@ -44,11 +38,11 @@ const Footer = () => {
 
         <div className="flex justify-center relative ">
           <Image
-            height={456}
-            width={564}
+            height={1000}
+            width={400}
             src={"/travelfooter.png"}
             alt="Call to action graphic"
-            className="hidden md:block absolute w-full -bottom-28"
+            className="hidden md:block absolute  -bottom-28"
           />
         </div>
       </div>
