@@ -120,3 +120,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.swiper-button-prev {
+  @apply !text-orange-600;
+}
+
+.swiper-button-next {
+  @apply !text-orange-600;
+}
