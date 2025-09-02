@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-black text-white">
-      <div className="absolute -top-52 left-1/2 transform -translate-x-1/2 bg-orange-500 text-left px-6- py-12 rounded-md shadow-lg w-11/12 max-w-6xl h-50 grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+      <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 bg-orange-500 text-left px-6- py-12 rounded-md shadow-lg w-11/12 max-w-6xl h-50 grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <div>
           <h2 className="text-3xl font-bold ">Ready to get started?</h2>
           <p className="mt-2 text-lg">
@@ -47,8 +47,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="container mx-auto py-15 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-8">
-        <div className="lg:col-span-2">
+      <div className="container mx-auto py-56 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-8">
+        <div className="lg:col-span-2 mt-16">
           <h3 className="text-2xl font-bold">Travel</h3>
           <p className="mt-4 text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, eum
@@ -56,7 +56,7 @@ const Footer = () => {
             molestias nam facilis veniam perferendis quam dolore.
           </p>
 
-          <div className="flex items-center mt-4 space-x-4">
+          <div className="flex items-center mt-4 space-x-4 mt-16">
             {socialLinks.map((link, index) => (
               <Link
                 key={index}
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="text-xl font-bold mb-4">Useful Links</h4>
+          <h4 className="text-xl font-bold mb-4 mt-16">Useful Links</h4>
           <div className="space-y-2 text-sm">
             {navigationLinks.map((link, index) => (
               <Link
@@ -84,8 +84,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="lg:col-span-2">
-          <h3 className="text-2xl font-bold">Instagram</h3>
+        <div className="lg:col-span-2 mt-16">
+          <h4 className="text-xl font-bold mb-4">Instagram</h4>
           <div className="grid grid-cols-6 gap-2">
             {instagramImages.map((src, index) => (
               <Image
@@ -100,7 +100,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 mt-16">
           <h4 className="text-xl font-bold mb-4">Subscribe</h4>
           <p className="text-sm mb-4">
             Subscribe our newsletter for getting quick updates.
