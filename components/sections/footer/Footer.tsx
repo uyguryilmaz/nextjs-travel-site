@@ -13,8 +13,6 @@ const Footer = () => {
     { href: "#", icon: <FaTwitter size={16} /> },
   ];
 
-  
-
   const instagramImages = Array.from(
     { length: 11 },
     (_, index) => `/instagram/${index + 1}.jpg`
@@ -30,9 +28,9 @@ const Footer = () => {
           </p>
 
           <Link href="/register">
-          <Button className="mt-4 bg-white text-orange-500 px-6 py-2 font-semibold rounded shadow-md">
-            OPEN AN ACCOUNT
-          </Button>
+            <Button className="mt-4 bg-white text-orange-500 px-6 py-2 font-semibold rounded shadow-md">
+              OPEN AN ACCOUNT
+            </Button>
           </Link>
         </div>
 
@@ -71,7 +69,16 @@ const Footer = () => {
 
         <div>
           <h4 className="text-xl font-bold mb-4 mt-16">Useful Links</h4>
-          <div className="space-y-2 text-sm">
+          <div className="relative w-16 h-1 bg-orange-500">
+            <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-amber-500"></div>
+
+            {/* Turuncu nokta hareket ediyor */}
+            <div className="absolute h-3 w-3 bg-orange-500 rounded-full top-1/2 -translate-y-1/2 animate-[move-dot_6s_linear_infinite] flex items-center justify-center">
+              {/* Beyaz nokta ortada sabit */}
+              <div className="h-1.5 w-1.5 bg-white rounded-full"></div>
+            </div>
+          </div>
+          <div className="space-y-2 text-sm mt-8">
             {navigationLinks.map((link, index) => (
               <Link
                 key={index}
@@ -86,7 +93,16 @@ const Footer = () => {
 
         <div className="lg:col-span-2 mt-16">
           <h4 className="text-xl font-bold mb-4">Instagram</h4>
-          <div className="grid grid-cols-6 gap-2">
+          <div className="relative w-16 h-1 bg-orange-500">
+            <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-amber-500"></div>
+
+            {/* Turuncu nokta hareket ediyor */}
+            <div className="absolute h-3 w-3 bg-orange-500 rounded-full top-1/2 -translate-y-1/2 animate-[move-dot_6s_linear_infinite] flex items-center justify-center">
+              {/* Beyaz nokta ortada sabit */}
+              <div className="h-1.5 w-1.5 bg-white rounded-full"></div>
+            </div>
+          </div>
+          <div className="grid grid-cols-6 gap-2 mt-8">
             {instagramImages.map((src, index) => (
               <Image
                 key={index}
@@ -102,7 +118,17 @@ const Footer = () => {
 
         <div className="lg:col-span-2 mt-16">
           <h4 className="text-xl font-bold mb-4">Subscribe</h4>
-          <p className="text-sm mb-4">
+          <div className="relative w-16 h-1 bg-orange-500">
+            <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-amber-500"></div>
+
+            {/* Turuncu nokta hareket ediyor */}
+            <div className="absolute h-3 w-3 bg-orange-500 rounded-full top-1/2 -translate-y-1/2 animate-[move-dot_6s_linear_infinite] flex items-center justify-center">
+              {/* Beyaz nokta ortada sabit */}
+              <div className="h-1.5 w-1.5 bg-white rounded-full"></div>
+            </div>
+          </div>
+
+          <p className="text-sm mb-4 mt-8">
             Subscribe our newsletter for getting quick updates.
           </p>
           <div className="flex flex-col sm:flex-row">

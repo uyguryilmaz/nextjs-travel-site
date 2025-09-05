@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -128,3 +135,10 @@
 .swiper-button-next {
   @apply !text-orange-600;
 }
+
+@keyframes move-dot {
+  0% { left: 0%; }
+  50% { left: 100%; }
+  100% { left: 0%; }
+}
+

@@ -16,7 +16,7 @@ export default function Home() {
       <div className="min-h-24"></div>
       <RecentProduct/>
       
-      <div className="min-h-60"></div>
+      
       
     </div>
   );

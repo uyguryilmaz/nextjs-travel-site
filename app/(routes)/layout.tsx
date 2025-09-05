@@ -11,7 +11,7 @@ const RouteLayout = ({ children }: RouteLayoutProps) => {
     <div>
       <Header />
       <div className="min-h-screen flex-1">{children}</div>
-
+      <div className="min-h-60"></div>
       <Footer />
     </div>
   );
