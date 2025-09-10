@@ -1,3 +1,5 @@
+"use client";
+
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 import React from "react";
@@ -7,6 +9,7 @@ import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 import { navigationLinks } from "@/constans";
 import SearchPage from "./Search";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const socialLinks = [
@@ -15,7 +18,8 @@ const Header = () => {
     { href: "#", icon: <FaTwitter size={16} /> },
   ];
 
-  
+  const pathname = usePathname();
+
   return (
     <header className="bg-black text-white">
       {/**Top Bar */}
@@ -66,7 +70,11 @@ const Header = () => {
               <Link
                 key={index}
                 href={link.href}
-                className="hover:text-orange-500"
+                className={`${
+                  pathname === link.href
+                    ? "text-orange-500"
+                    : "hover:text-orange-500"
+                }`}
               >
                 {link.label}
               </Link>
@@ -74,12 +82,12 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4 ml-30">
-            <SearchPage/>
+            <SearchPage />
             <div className="p-3  bg-sky-400 cursor-pointer text-white rounded-full  ">
               <User />
             </div>
 
-            <MobileMenu/>
+            <MobileMenu />
           </div>
         </div>
       </div>
