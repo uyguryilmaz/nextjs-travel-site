@@ -1,8 +1,9 @@
 import React from 'react'
+import HotelList from './_components/hotelList'
 
 const Hotels = () => {
   return (
-    <div>Hotels</div>
+    <div><HotelList/></div>
   )
 }
 
