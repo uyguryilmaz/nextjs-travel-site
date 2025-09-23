@@ -45,7 +45,7 @@ npm run dev
 
 🖥️ Home Page
 
-![Homepage2](assets/homepage2.png)
+![Homepage1](assets/homepage2.png)
 ![Homepage2](assets/homepage2.png)
 ![Homepage3](assets/homepage3.png)
 
@@ -55,7 +55,7 @@ npm run dev
 
 🔐 Register Page
 
-!Registerpage](assets/registerpage.png)
+![Registerpage](assets/registerpage.png)
 
 🏨 Hotels Page
 
