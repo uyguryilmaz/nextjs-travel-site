@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌍 Travel Booking Website
+A modern travel booking web application built with Next.js, MongoDB, NextAuth, Prisma, and TailwindCSS.
+This project demonstrates authentication, database integration, and responsive UI — perfect for showcasing in a portfolio.
 
-## Getting Started
+✨ Features
+🔐 User Authentication with NextAuth (JWT strategy)
+🗄️ MongoDB + Prisma for database management
+🎨 Modern UI with TailwindCSS + Shadcn/ui components
+⚡ State Management using Zustand
+📋 Forms & Validation with React Hook Form + Zod
+📱 Responsive Design optimized for all devices
+🚀 API Endpoints powered by Next.js
+🛠️ Tech Stack
+TypeScript – Type safety
+Next.js – React framework
+MongoDB – NoSQL Database
+Prisma – ORM for database queries
+NextAuth – Authentication
+TailwindCSS – Styling
+Shadcn/ui – Accessible UI components
+Zustand – State management
+React Hook Form – Form handling
+Zod – Schema validation
+🚀 Getting Started
+1️⃣ Clone the repo
+git clone https://github.com/yourusername/travel-booking.git
+cd travel-booking
 
-First, run the development server:
+2️⃣ Install dependencies
 
-```bash
+npm install
+
+3️⃣ Set up environment variables
+
+Create a .env file in the root directory:
+
+DATABASE_URL="your-mongodb-uri"
+NEXTAUTH_SECRET="your-secret-key"
+NEXTAUTH_URL="http://localhost:3000"
+
+4️⃣ Run the app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📸 Screenshots
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🖥️ Home Page
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Homepage2](assets/homepage2.png)
+![Homepage2](assets/homepage2.png)
+![Homepage3](assets/homepage3.png)
 
-## Learn More
+🔐 Login Page
 
-To learn more about Next.js, take a look at the following resources:
+![Loginpage](assets/loginpage.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🔐 Register Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+!Registerpage](assets/registerpage.png)
 
-## Deploy on Vercel
+🏨 Hotels Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Hotelspage](.travel/assets/hotelspage.png)
