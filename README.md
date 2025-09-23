@@ -45,7 +45,7 @@ npm run dev
 
 🖥️ Home Page
 
-![Homepage1](assets/homepage2.png)
+![Homepage1](assets/homepage.png)
 ![Homepage2](assets/homepage2.png)
 ![Homepage3](assets/homepage3.png)
 
@@ -60,3 +60,4 @@ npm run dev
 🏨 Hotels Page
 
 ![Hotelspage](.travel/assets/hotelspage.png)
+assets/homepage.png
