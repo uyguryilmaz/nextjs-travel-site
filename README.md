@@ -10,7 +10,9 @@ This project demonstrates authentication, database integration, and responsive U
 📋 Forms & Validation with React Hook Form + Zod
 📱 Responsive Design optimized for all devices
 🚀 API Endpoints powered by Next.js
+
 🛠️ Tech Stack
+
 TypeScript – Type safety
 Next.js – React framework
 MongoDB – NoSQL Database
@@ -21,7 +23,10 @@ Shadcn/ui – Accessible UI components
 Zustand – State management
 React Hook Form – Form handling
 Zod – Schema validation
+
+
 🚀 Getting Started
+
 1️⃣ Clone the repo
 git clone https://github.com/yourusername/travel-booking.git
 cd travel-booking
