@@ -1,14 +1,22 @@
 🌍 Travel Booking Website
+
 A modern travel booking web application built with Next.js, MongoDB, NextAuth, Prisma, and TailwindCSS.
 This project demonstrates authentication, database integration, and responsive UI — perfect for showcasing in a portfolio.
 
 ✨ Features
+
 🔐 User Authentication with NextAuth (JWT strategy)
+
 🗄️ MongoDB + Prisma for database management
+
 🎨 Modern UI with TailwindCSS + Shadcn/ui components
+
 ⚡ State Management using Zustand
+
 📋 Forms & Validation with React Hook Form + Zod
+
 📱 Responsive Design optimized for all devices
+
 🚀 API Endpoints powered by Next.js
 
 🛠️ Tech Stack
