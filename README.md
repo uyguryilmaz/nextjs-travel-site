@@ -59,8 +59,7 @@ npm run dev
 
 🏨 Hotels Page
 
-![Hotelspage](.travel/assets/hotelspage.png)
-assets/homepage.png
+![Hotelspage](assets/hotelspage.png)
 
 
-![test]test.png
+
